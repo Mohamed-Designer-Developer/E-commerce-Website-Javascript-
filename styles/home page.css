@@ -1,0 +1,400 @@
+/* store the colors */
+:root {
+  --light-purple: #000c4f;
+  --primary: #fd5353;
+}
+
+/* general styling */
+*,
+**::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  font-size: 16px;
+}
+
+/* header styling */
+nav {
+  position: fixed;
+  display: flex;
+  gap: 18rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul img {
+  width: 50px;
+}
+
+.menu-mobile img {
+  width: 40px;
+  display: none;
+}
+
+/* the landing Page Styling */
+
+.landing {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .info {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.landing .info h1 {
+    font-size: 56px;
+    color: #393a56;
+    color: var(--light-purple);
+}
+
+.info p {
+    font-size: 16px;
+}
+
+.landing .info button {
+    background-color: #fff;
+    width: 170px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary);
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.landing img {
+    margin-top: 30px;
+}
+
+/* the products sections  */
+
+.galeries {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  text-align: center;
+  gap: 10rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 6rem;
+  margin-top: 5rem;
+}
+
+
+.section-h1 {
+  font-size: 60px;
+  color: #393a56;
+  text-align: center;
+}
+
+
+.products {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 5rem;
+}
+
+.products button {
+  background-color: #fff;
+  width: 170px;
+  height: 45px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary);
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+.products .product img.start {
+  width: 100px;
+}
+
+.galery h1 {
+  color: red;
+  font-size: 20px;
+}
+
+.galery span {
+  color: black;
+  margin-left: 10px;
+}
+
+.product h1 {
+  color: red;
+  font-size: 20px;
+  text-align: left;
+}
+
+.product span {
+  color: black;
+  margin-left: 10px;
+}
+
+
+
+/* footer styling is here */
+
+footer {
+  background: linear-gradient(to right, #fd5353, var(--light-purple));
+  padding: 5rem 18rem;
+  margin-top: 90px;
+}
+
+#footer {
+  width: 100%;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  color: white;
+}
+
+.contact-info {
+  line-height: 40px;
+  margin-top: 30px;
+}
+
+.contact-info h1 {
+  margin-bottom: 50px;
+  color: white;
+  font-size: 40px;
+}
+
+.contact-info img {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.get-intouch {
+  font-size: 20px;
+}
+
+.contact-form h1 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact-form form input,
+.contact-form button {
+  width: 100%;
+  padding: 16px 10px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.contact-form form textarea {
+  line-height: 30px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 15px;
+  resize: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contact-form button {
+  font-size: 14px;
+  color: darkblue;
+  cursor: pointer;
+}
+
+.contact-form label {
+  text-transform: uppercase;
+}
+
+
+.contact-form button:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+
+
+
+/* responsiveness page */
+
+body nav .menu-mobile {
+  display: none;
+}
+
+@media screen  and (max-width: 1000px) {  
+  .navigation {
+    display: none;
+  }
+
+  nav {
+    padding-left: 50px;
+    /* we all so change the gap from 30 to 15+ something */
+  }
+
+  .landing img {
+    display: none;
+  }
+
+  .landing .info {
+    padding-top: 100px;
+    width: 100%;
+  }
+
+  .landing .info p {
+    padding-bottom: -150px;
+    padding-top: 30px;
+  }
+
+  .landing .info h1 {
+    font-size: 40px;
+    line-height: 80px;
+    padding-bottom: -100px;
+    padding-top: 50px;
+  }
+
+  .galeries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen  and (max-width: 568px) {
+  body nav .menu-mobile {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .products {
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .products .product h1 {
+    text-align: center;
+  }
+
+  .galeries {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .products button {
+     margin-left: 100px;
+  }
+
+  /* the footer */
+  .footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+    color: white;
+  }
+
+  footer {
+    padding: 5rem 2rem; 
+    width: 100%;
+  }
+
+  .contact-info {
+    order: 1;
+    text-align: center;
+  }
+  
+  .contact-info h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .contact-info img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    border-radius: 50%;
+  }
+  
+  .get-intouch {
+    margin-left: 40px;
+  }
+
+  .contact-info p {
+    margin: 0;
+  }
+}
+
+
+#navbar.active {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  margin-top: -16px;
+  margin-left: -8px;
+}
+
+
+/* the cart text style */
+
+.cart-text {
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+
+

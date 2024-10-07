@@ -1,0 +1,10 @@
+// Main Idea of Javascript
+// 1- Save the data
+// 2- Generate the HTML
+// 3- Make it interactive
+
+// Steps Module
+//0-don`t load the file
+//1-Module type for the script loading.
+//2- Export the data 
+//2- Import the data the imports must at the top the file.

@@ -1,0 +1,130 @@
+/* store the colors */
+:root {
+  --light-purple: #000c4f;
+  --primary: #fd5353;
+}
+
+/* general styling */
+*,
+**::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  font-size: 16px;
+}
+
+/* header styling */
+nav {
+  position: fixed;
+  margin-left: 50px;
+}
+
+ul img {
+  width: 50px;
+}
+
+.menu-mobile img {
+  width: 40px;
+  display: none;
+}
+
+.carts {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.carts .cart {
+  margin-top: 100px;
+}
+
+.cart {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.carts {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cart .product-image {
+  width: 180px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.carts .cart .product-image:hover {
+  transform: scale(1.2);
+}
+
+.informations p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #fe0000;
+  width: 130px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+.informations img {
+  width: 100px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.informations h1 {
+  text-align: left;
+  font-size: 22px;
+  color: red;
+}
+
+.informations span {
+  color: black;
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+span {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .carts {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+}
